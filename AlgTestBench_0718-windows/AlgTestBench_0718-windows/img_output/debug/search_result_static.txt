@@ -1,0 +1,8 @@
+top1:0,result:0.00%
+top2:1,result:2.78%
+top3:1,result:2.78%
+top5:1,result:2.78%
+top7:1,result:2.78%
+top10:1,result:2.78%
+top20:1,result:2.78%
+Query Count::36

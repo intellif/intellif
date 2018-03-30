@@ -1,0 +1,2 @@
+PATH=..\version\algversion1\win64;%PATH%
+..\version\algversion1\win64\AlgTestCase.exe --modelpath ..\version\algversion1\win64\model -f 4 -v 8 -t 0.6 -i ..\img_input -n ..\img_namelist -o ..\img_output\version1\win64

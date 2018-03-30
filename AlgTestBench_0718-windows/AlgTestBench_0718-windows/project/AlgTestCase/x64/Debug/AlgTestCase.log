@@ -1,0 +1,52 @@
+﻿生成启动时间为 2017/8/17 20:41:38。
+     1>项目“D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\AlgTestCase\AlgTestCase.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\boost_1_58_0" /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\IFaceSDK\win_x64\lib" /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\opencv\build\include" /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt ..\..\src\AlogTestCaseMain.cpp ..\..\src\BLKTracker.cpp ..\..\src\FaceDataItem.cpp ..\..\src\FaceFeatherExtrater.cpp ..\..\src\FaceFrontProcesser.cpp ..\..\src\FaceTrackFilter.cpp ..\..\src\fuzzy_degree.cpp ..\..\src\GlobalExceptionHandler.cpp ..\..\src\IfsdkWrapper.cpp ..\..\src\PreAndPostProcessor.cpp ..\..\src\utilsfunction.cpp
+         utilsfunction.cpp
+     1>..\..\src\utilsfunction.cpp(171): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\src\utilsfunction.cpp(206): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\..\src\utilsfunction.cpp(207): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\..\src\utilsfunction.cpp(209): warning C4244: “return”: 从“int”转换到“float”，可能丢失数据
+         PreAndPostProcessor.cpp
+     1>..\..\src\PreAndPostProcessor.cpp(26): fatal error C1083: 无法打开包括文件: “curl/curl.h”: No such file or directory
+         IfsdkWrapper.cpp
+     1>d:\pjd\test\program\algtestbench_0718-windows\algtestbench_0718-windows\src\PitorHOGDescriptor.h(13): fatal error C1083: 无法打开包括文件: “opencv.hpp”: No such file or directory
+         GlobalExceptionHandler.cpp
+         fuzzy_degree.cpp
+     1>..\..\src\fuzzy_degree.cpp(67): warning C4305: “初始化”: 从“double”到“float”截断
+     1>..\..\src\fuzzy_degree.cpp(68): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+     1>..\..\src\fuzzy_degree.cpp(155): warning C4305: “=”: 从“double”到“float”截断
+     1>..\..\src\fuzzy_degree.cpp(193): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\..\src\fuzzy_degree.cpp(195): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>..\..\src\fuzzy_degree.cpp(218): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\src\fuzzy_degree.cpp(263): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\..\src\fuzzy_degree.cpp(268): warning C4018: “>”: 有符号/无符号不匹配
+     1>..\..\src\fuzzy_degree.cpp(273): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\..\src\fuzzy_degree.cpp(278): warning C4018: “>”: 有符号/无符号不匹配
+         FaceTrackFilter.cpp
+     1>d:\pjd\test\program\algtestbench_0718-windows\algtestbench_0718-windows\src\PitorHOGDescriptor.h(13): fatal error C1083: 无法打开包括文件: “opencv.hpp”: No such file or directory
+         FaceFrontProcesser.cpp
+     1>d:\pjd\test\program\algtestbench_0718-windows\algtestbench_0718-windows\src\PitorHOGDescriptor.h(13): fatal error C1083: 无法打开包括文件: “opencv.hpp”: No such file or directory
+         FaceFeatherExtrater.cpp
+     1>d:\pjd\test\program\algtestbench_0718-windows\algtestbench_0718-windows\src\PitorHOGDescriptor.h(13): fatal error C1083: 无法打开包括文件: “opencv.hpp”: No such file or directory
+         FaceDataItem.cpp
+         BLKTracker.cpp
+     1>..\..\src\BLKTracker.cpp(82): warning C4244: “参数”: 从“const int”转换到“float”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(123): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(164): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(173): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(264): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(302): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(303): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(353): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(366): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(472): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(493): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+     1>..\..\src\BLKTracker.cpp(505): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+         AlogTestCaseMain.cpp
+         正在生成代码...
+     1>已完成生成项目“D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\AlgTestCase\AlgTestCase.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:30.09

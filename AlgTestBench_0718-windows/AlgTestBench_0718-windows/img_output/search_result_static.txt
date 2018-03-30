@@ -1,0 +1,9 @@
+top1:9,result:100.00
+top2:13,result:144.44
+top3:14,result:155.56
+top5:14,result:155.56
+top10:14,result:155.56
+top20:14,result:155.56
+top50:14,result:155.56
+top100:14,result:155.56
+query::9

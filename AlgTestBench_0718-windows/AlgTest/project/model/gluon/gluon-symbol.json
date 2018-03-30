@@ -1,0 +1,4884 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "data", 
+      "inputs": []
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "loc_pool0", 
+      "attr": {
+        "kernel": "(2, 2)", 
+        "pool_type": "avg", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[0, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "24", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "loc_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "24", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[1, 0, 0], [2, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "loc_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": [[3, 0, 0], [4, 0, 0], [5, 0, 0], [6, 0, 1], [7, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "loc_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[8, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "loc_pool1", 
+      "attr": {
+        "kernel": "(2, 2)", 
+        "pool_type": "max", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[9, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "48", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "loc_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "48", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[10, 0, 0], [11, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "loc_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": [[12, 0, 0], [13, 0, 0], [14, 0, 0], [15, 0, 1], [16, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "loc_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[17, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "loc_pool2", 
+      "attr": {
+        "kernel": "(2, 2)", 
+        "pool_type": "max", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[18, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_conv3_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "96", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "loc_conv3", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "96", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[19, 0, 0], [20, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn3_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn3_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn3_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn3_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "loc_bn3", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": [[21, 0, 0], [22, 0, 0], [23, 0, 0], [24, 0, 1], [25, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "loc_relu3", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[26, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "loc_pool3", 
+      "attr": {
+        "kernel": "(2, 2)", 
+        "pool_type": "max", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[27, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "flatten0", 
+      "inputs": [[28, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "loc__fc4_weight", 
+      "attr": {"num_hidden": "64"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc__fc4_bias", 
+      "attr": {"num_hidden": "64"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "loc__fc4", 
+      "attr": {"num_hidden": "64"}, 
+      "inputs": [[29, 0, 0], [30, 0, 0], [31, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn4_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn4_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn4_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_bn4_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "loc_bn4", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": [[32, 0, 0], [33, 0, 0], [34, 0, 0], [35, 0, 1], [36, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "loc_relu4", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[37, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stn_loc_weight", 
+      "attr": {
+        "__lr_mult__": "0.1", 
+        "num_hidden": "6"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stn_loc_bias", 
+      "attr": {
+        "__lr_mult__": "0.1", 
+        "num_hidden": "6"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "stn_loc", 
+      "attr": {
+        "__lr_mult__": "0.1", 
+        "num_hidden": "6"
+      }, 
+      "inputs": [[38, 0, 0], [39, 0, 0], [40, 0, 0]]
+    }, 
+    {
+      "op": "SpatialTransformer", 
+      "name": "stn", 
+      "attr": {
+        "sampler_type": "bilinear", 
+        "target_shape": "(112, 96)", 
+        "transform_type": "affine"
+      }, 
+      "inputs": [[0, 0, 0], [41, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv0_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv0", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[42, 0, 0], [43, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage1_unit1_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[44, 0, 0], [45, 0, 0], [46, 0, 0], [47, 0, 1], [48, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage1_unit1_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[49, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage1_unit1_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[50, 0, 0], [51, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage1_unit1_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[52, 0, 0], [53, 0, 0], [54, 0, 0], [55, 0, 1], [56, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage1_unit1_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[57, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage1_unit1_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[58, 0, 0], [59, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit1_sc_weight", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage1_unit1_sc", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[50, 0, 0], [61, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus0", 
+      "inputs": [[60, 0, 0], [62, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage1_unit2_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[63, 0, 0], [64, 0, 0], [65, 0, 0], [66, 0, 1], [67, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage1_unit2_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[68, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage1_unit2_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[69, 0, 0], [70, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage1_unit2_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[71, 0, 0], [72, 0, 0], [73, 0, 0], [74, 0, 1], [75, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage1_unit2_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[76, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit2_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage1_unit2_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[77, 0, 0], [78, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus1", 
+      "inputs": [[79, 0, 0], [63, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage1_unit3_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[80, 0, 0], [81, 0, 0], [82, 0, 0], [83, 0, 1], [84, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage1_unit3_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[85, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage1_unit3_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[86, 0, 0], [87, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage1_unit3_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[88, 0, 0], [89, 0, 0], [90, 0, 0], [91, 0, 1], [92, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage1_unit3_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[93, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage1_unit3_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage1_unit3_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "32", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[94, 0, 0], [95, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus2", 
+      "inputs": [[96, 0, 0], [80, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage2_unit1_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[97, 0, 0], [98, 0, 0], [99, 0, 0], [100, 0, 1], [101, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage2_unit1_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[102, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage2_unit1_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[103, 0, 0], [104, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage2_unit1_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[105, 0, 0], [106, 0, 0], [107, 0, 0], [108, 0, 1], [109, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage2_unit1_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[110, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage2_unit1_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[111, 0, 0], [112, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit1_sc_weight", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage2_unit1_sc", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[103, 0, 0], [114, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus3", 
+      "inputs": [[113, 0, 0], [115, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage2_unit2_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[116, 0, 0], [117, 0, 0], [118, 0, 0], [119, 0, 1], [120, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage2_unit2_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[121, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage2_unit2_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[122, 0, 0], [123, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage2_unit2_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[124, 0, 0], [125, 0, 0], [126, 0, 0], [127, 0, 1], [128, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage2_unit2_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[129, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit2_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage2_unit2_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[130, 0, 0], [131, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus4", 
+      "inputs": [[132, 0, 0], [116, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage2_unit3_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[133, 0, 0], [134, 0, 0], [135, 0, 0], [136, 0, 1], [137, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage2_unit3_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[138, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage2_unit3_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[139, 0, 0], [140, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage2_unit3_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[141, 0, 0], [142, 0, 0], [143, 0, 0], [144, 0, 1], [145, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage2_unit3_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[146, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit3_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage2_unit3_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[147, 0, 0], [148, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus5", 
+      "inputs": [[149, 0, 0], [133, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage2_unit4_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[150, 0, 0], [151, 0, 0], [152, 0, 0], [153, 0, 1], [154, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage2_unit4_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[155, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage2_unit4_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[156, 0, 0], [157, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage2_unit4_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[158, 0, 0], [159, 0, 0], [160, 0, 0], [161, 0, 1], [162, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage2_unit4_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[163, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage2_unit4_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage2_unit4_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "64", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[164, 0, 0], [165, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus6", 
+      "inputs": [[166, 0, 0], [150, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit1_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[167, 0, 0], [168, 0, 0], [169, 0, 0], [170, 0, 1], [171, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit1_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[172, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit1_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[173, 0, 0], [174, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit1_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[175, 0, 0], [176, 0, 0], [177, 0, 0], [178, 0, 1], [179, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit1_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[180, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit1_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[181, 0, 0], [182, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit1_sc_weight", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit1_sc", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[173, 0, 0], [184, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus7", 
+      "inputs": [[183, 0, 0], [185, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit2_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[186, 0, 0], [187, 0, 0], [188, 0, 0], [189, 0, 1], [190, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit2_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[191, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit2_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[192, 0, 0], [193, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit2_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[194, 0, 0], [195, 0, 0], [196, 0, 0], [197, 0, 1], [198, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit2_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[199, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit2_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit2_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[200, 0, 0], [201, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus8", 
+      "inputs": [[202, 0, 0], [186, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit3_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[203, 0, 0], [204, 0, 0], [205, 0, 0], [206, 0, 1], [207, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit3_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[208, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit3_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[209, 0, 0], [210, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit3_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[211, 0, 0], [212, 0, 0], [213, 0, 0], [214, 0, 1], [215, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit3_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[216, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit3_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit3_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[217, 0, 0], [218, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus9", 
+      "inputs": [[219, 0, 0], [203, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit4_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[220, 0, 0], [221, 0, 0], [222, 0, 0], [223, 0, 1], [224, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit4_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[225, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit4_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[226, 0, 0], [227, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit4_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[228, 0, 0], [229, 0, 0], [230, 0, 0], [231, 0, 1], [232, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit4_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[233, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit4_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit4_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[234, 0, 0], [235, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus10", 
+      "inputs": [[236, 0, 0], [220, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit5_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[237, 0, 0], [238, 0, 0], [239, 0, 0], [240, 0, 1], [241, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit5_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[242, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit5_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[243, 0, 0], [244, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit5_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[245, 0, 0], [246, 0, 0], [247, 0, 0], [248, 0, 1], [249, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit5_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[250, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit5_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit5_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[251, 0, 0], [252, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus11", 
+      "inputs": [[253, 0, 0], [237, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit6_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[254, 0, 0], [255, 0, 0], [256, 0, 0], [257, 0, 1], [258, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit6_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[259, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit6_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[260, 0, 0], [261, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "stage3_unit6_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[262, 0, 0], [263, 0, 0], [264, 0, 0], [265, 0, 1], [266, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "stage3_unit6_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[267, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "stage3_unit6_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "stage3_unit6_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "128", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[268, 0, 0], [269, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus12", 
+      "inputs": [[270, 0, 0], [254, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "reg_stage4_unit1_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[271, 0, 0], [272, 0, 0], [273, 0, 0], [274, 0, 1], [275, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "reg_stage4_unit1_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[276, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "reg_stage4_unit1_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[277, 0, 0], [278, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "reg_stage4_unit1_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[279, 0, 0], [280, 0, 0], [281, 0, 0], [282, 0, 1], [283, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "reg_stage4_unit1_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[284, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "reg_stage4_unit1_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[285, 0, 0], [286, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit1_sc_weight", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "reg_stage4_unit1_sc", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[277, 0, 0], [288, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus13", 
+      "inputs": [[287, 0, 0], [289, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "reg_stage4_unit2_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[290, 0, 0], [291, 0, 0], [292, 0, 0], [293, 0, 1], [294, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "reg_stage4_unit2_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[295, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "reg_stage4_unit2_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[296, 0, 0], [297, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "reg_stage4_unit2_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[298, 0, 0], [299, 0, 0], [300, 0, 0], [301, 0, 1], [302, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "reg_stage4_unit2_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[303, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit2_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "reg_stage4_unit2_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[304, 0, 0], [305, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus14", 
+      "inputs": [[306, 0, 0], [290, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "reg_stage4_unit3_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[307, 0, 0], [308, 0, 0], [309, 0, 0], [310, 0, 1], [311, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "reg_stage4_unit3_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[312, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "reg_stage4_unit3_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[313, 0, 0], [314, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "reg_stage4_unit3_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[315, 0, 0], [316, 0, 0], [317, 0, 0], [318, 0, 1], [319, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "reg_stage4_unit3_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[320, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_stage4_unit3_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "reg_stage4_unit3_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[321, 0, 0], [322, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus15", 
+      "inputs": [[323, 0, 0], [307, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "reg_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": [[324, 0, 0], [325, 0, 0], [326, 0, 0], [327, 0, 1], [328, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "reg_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[329, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "reg_pool1", 
+      "attr": {
+        "kernel": "(2, 2)", 
+        "pool_type": "max", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[330, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "flatten1", 
+      "inputs": [[331, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_fc_weight", 
+      "attr": {"num_hidden": "128"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "reg_fc_bias", 
+      "attr": {"num_hidden": "128"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "reg_fc", 
+      "attr": {"num_hidden": "128"}, 
+      "inputs": [[332, 0, 0], [333, 0, 0], [334, 0, 0]]
+    }, 
+    {
+      "op": "L2Normalization", 
+      "name": "reg_feat", 
+      "attr": {"mode": "instance"}, 
+      "inputs": [[335, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "cls_stage4_unit1_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[271, 0, 0], [337, 0, 0], [338, 0, 0], [339, 0, 1], [340, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "cls_stage4_unit1_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[341, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "cls_stage4_unit1_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[342, 0, 0], [343, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "cls_stage4_unit1_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[344, 0, 0], [345, 0, 0], [346, 0, 0], [347, 0, 1], [348, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "cls_stage4_unit1_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[349, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "cls_stage4_unit1_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[350, 0, 0], [351, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit1_sc_weight", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "cls_stage4_unit1_sc", 
+      "attr": {
+        "kernel": "(1, 1)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "stride": "(2, 2)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[342, 0, 0], [353, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus16", 
+      "inputs": [[352, 0, 0], [354, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "cls_stage4_unit2_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[355, 0, 0], [356, 0, 0], [357, 0, 0], [358, 0, 1], [359, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "cls_stage4_unit2_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[360, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "cls_stage4_unit2_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[361, 0, 0], [362, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "cls_stage4_unit2_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[363, 0, 0], [364, 0, 0], [365, 0, 0], [366, 0, 1], [367, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "cls_stage4_unit2_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[368, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit2_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "cls_stage4_unit2_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[369, 0, 0], [370, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus17", 
+      "inputs": [[371, 0, 0], [355, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "cls_stage4_unit3_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[372, 0, 0], [373, 0, 0], [374, 0, 0], [375, 0, 1], [376, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "cls_stage4_unit3_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[377, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_conv1_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "cls_stage4_unit3_conv1", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[378, 0, 0], [379, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_bn2_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_bn2_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_bn2_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_bn2_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "cls_stage4_unit3_bn2", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "True"
+      }, 
+      "inputs": [[380, 0, 0], [381, 0, 0], [382, 0, 0], [383, 0, 1], [384, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "cls_stage4_unit3_relu2", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[385, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_stage4_unit3_conv2_weight", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "cls_stage4_unit3_conv2", 
+      "attr": {
+        "kernel": "(3, 3)", 
+        "no_bias": "True", 
+        "num_filter": "256", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)", 
+        "workspace": "512"
+      }, 
+      "inputs": [[386, 0, 0], [387, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus18", 
+      "inputs": [[388, 0, 0], [372, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_bn1_gamma", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_bn1_beta", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_bn1_moving_mean", 
+      "attr": {
+        "__init__": "[\"zero\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_bn1_moving_var", 
+      "attr": {
+        "__init__": "[\"one\", {}]", 
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "cls_bn1", 
+      "attr": {
+        "eps": "2e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9"
+      }, 
+      "inputs": [[389, 0, 0], [390, 0, 0], [391, 0, 0], [392, 0, 1], [393, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "cls_relu1", 
+      "attr": {"act_type": "relu"}, 
+      "inputs": [[394, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "cls_pool1", 
+      "attr": {
+        "kernel": "(2, 2)", 
+        "pool_type": "max", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[395, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "flatten2", 
+      "inputs": [[396, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_fc_weight", 
+      "attr": {"num_hidden": "128"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "cls_fc_bias", 
+      "attr": {"num_hidden": "128"}, 
+      "inputs": []
+    }, 
+    {
+      "op": "FullyConnected", 
+      "name": "cls_fc", 
+      "attr": {"num_hidden": "128"}, 
+      "inputs": [[397, 0, 0], [398, 0, 0], [399, 0, 0]]
+    }, 
+    {
+      "op": "L2Normalization", 
+      "name": "cls_feat", 
+      "attr": {"mode": "instance"}, 
+      "inputs": [[400, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "_plus19", 
+      "inputs": [[336, 0, 0], [401, 0, 0]]
+    }, 
+    {
+      "op": "L2Normalization", 
+      "name": "feat", 
+      "attr": {"mode": "instance"}, 
+      "inputs": [[402, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [
+    0, 
+    2, 
+    4, 
+    5, 
+    6, 
+    7, 
+    11, 
+    13, 
+    14, 
+    15, 
+    16, 
+    20, 
+    22, 
+    23, 
+    24, 
+    25, 
+    30, 
+    31, 
+    33, 
+    34, 
+    35, 
+    36, 
+    39, 
+    40, 
+    43, 
+    45, 
+    46, 
+    47, 
+    48, 
+    51, 
+    53, 
+    54, 
+    55, 
+    56, 
+    59, 
+    61, 
+    64, 
+    65, 
+    66, 
+    67, 
+    70, 
+    72, 
+    73, 
+    74, 
+    75, 
+    78, 
+    81, 
+    82, 
+    83, 
+    84, 
+    87, 
+    89, 
+    90, 
+    91, 
+    92, 
+    95, 
+    98, 
+    99, 
+    100, 
+    101, 
+    104, 
+    106, 
+    107, 
+    108, 
+    109, 
+    112, 
+    114, 
+    117, 
+    118, 
+    119, 
+    120, 
+    123, 
+    125, 
+    126, 
+    127, 
+    128, 
+    131, 
+    134, 
+    135, 
+    136, 
+    137, 
+    140, 
+    142, 
+    143, 
+    144, 
+    145, 
+    148, 
+    151, 
+    152, 
+    153, 
+    154, 
+    157, 
+    159, 
+    160, 
+    161, 
+    162, 
+    165, 
+    168, 
+    169, 
+    170, 
+    171, 
+    174, 
+    176, 
+    177, 
+    178, 
+    179, 
+    182, 
+    184, 
+    187, 
+    188, 
+    189, 
+    190, 
+    193, 
+    195, 
+    196, 
+    197, 
+    198, 
+    201, 
+    204, 
+    205, 
+    206, 
+    207, 
+    210, 
+    212, 
+    213, 
+    214, 
+    215, 
+    218, 
+    221, 
+    222, 
+    223, 
+    224, 
+    227, 
+    229, 
+    230, 
+    231, 
+    232, 
+    235, 
+    238, 
+    239, 
+    240, 
+    241, 
+    244, 
+    246, 
+    247, 
+    248, 
+    249, 
+    252, 
+    255, 
+    256, 
+    257, 
+    258, 
+    261, 
+    263, 
+    264, 
+    265, 
+    266, 
+    269, 
+    272, 
+    273, 
+    274, 
+    275, 
+    278, 
+    280, 
+    281, 
+    282, 
+    283, 
+    286, 
+    288, 
+    291, 
+    292, 
+    293, 
+    294, 
+    297, 
+    299, 
+    300, 
+    301, 
+    302, 
+    305, 
+    308, 
+    309, 
+    310, 
+    311, 
+    314, 
+    316, 
+    317, 
+    318, 
+    319, 
+    322, 
+    325, 
+    326, 
+    327, 
+    328, 
+    333, 
+    334, 
+    337, 
+    338, 
+    339, 
+    340, 
+    343, 
+    345, 
+    346, 
+    347, 
+    348, 
+    351, 
+    353, 
+    356, 
+    357, 
+    358, 
+    359, 
+    362, 
+    364, 
+    365, 
+    366, 
+    367, 
+    370, 
+    373, 
+    374, 
+    375, 
+    376, 
+    379, 
+    381, 
+    382, 
+    383, 
+    384, 
+    387, 
+    390, 
+    391, 
+    392, 
+    393, 
+    398, 
+    399
+  ], 
+  "node_row_ptr": [
+    0, 
+    1, 
+    2, 
+    3, 
+    4, 
+    5, 
+    6, 
+    7, 
+    8, 
+    11, 
+    12, 
+    13, 
+    14, 
+    15, 
+    16, 
+    17, 
+    18, 
+    19, 
+    22, 
+    23, 
+    24, 
+    25, 
+    26, 
+    27, 
+    28, 
+    29, 
+    30, 
+    33, 
+    34, 
+    35, 
+    36, 
+    37, 
+    38, 
+    39, 
+    40, 
+    41, 
+    42, 
+    43, 
+    46, 
+    47, 
+    48, 
+    49, 
+    50, 
+    53, 
+    54, 
+    55, 
+    56, 
+    57, 
+    58, 
+    59, 
+    62, 
+    63, 
+    64, 
+    65, 
+    66, 
+    67, 
+    68, 
+    69, 
+    72, 
+    73, 
+    74, 
+    75, 
+    76, 
+    77, 
+    78, 
+    79, 
+    80, 
+    81, 
+    82, 
+    85, 
+    86, 
+    87, 
+    88, 
+    89, 
+    90, 
+    91, 
+    92, 
+    95, 
+    96, 
+    97, 
+    98, 
+    99, 
+    100, 
+    101, 
+    102, 
+    103, 
+    106, 
+    107, 
+    108, 
+    109, 
+    110, 
+    111, 
+    112, 
+    113, 
+    116, 
+    117, 
+    118, 
+    119, 
+    120, 
+    121, 
+    122, 
+    123, 
+    124, 
+    127, 
+    128, 
+    129, 
+    130, 
+    131, 
+    132, 
+    133, 
+    134, 
+    137, 
+    138, 
+    139, 
+    140, 
+    141, 
+    142, 
+    143, 
+    144, 
+    145, 
+    146, 
+    147, 
+    150, 
+    151, 
+    152, 
+    153, 
+    154, 
+    155, 
+    156, 
+    157, 
+    160, 
+    161, 
+    162, 
+    163, 
+    164, 
+    165, 
+    166, 
+    167, 
+    168, 
+    171, 
+    172, 
+    173, 
+    174, 
+    175, 
+    176, 
+    177, 
+    178, 
+    181, 
+    182, 
+    183, 
+    184, 
+    185, 
+    186, 
+    187, 
+    188, 
+    189, 
+    192, 
+    193, 
+    194, 
+    195, 
+    196, 
+    197, 
+    198, 
+    199, 
+    202, 
+    203, 
+    204, 
+    205, 
+    206, 
+    207, 
+    208, 
+    209, 
+    210, 
+    213, 
+    214, 
+    215, 
+    216, 
+    217, 
+    218, 
+    219, 
+    220, 
+    223, 
+    224, 
+    225, 
+    226, 
+    227, 
+    228, 
+    229, 
+    230, 
+    231, 
+    232, 
+    233, 
+    236, 
+    237, 
+    238, 
+    239, 
+    240, 
+    241, 
+    242, 
+    243, 
+    246, 
+    247, 
+    248, 
+    249, 
+    250, 
+    251, 
+    252, 
+    253, 
+    254, 
+    257, 
+    258, 
+    259, 
+    260, 
+    261, 
+    262, 
+    263, 
+    264, 
+    267, 
+    268, 
+    269, 
+    270, 
+    271, 
+    272, 
+    273, 
+    274, 
+    275, 
+    278, 
+    279, 
+    280, 
+    281, 
+    282, 
+    283, 
+    284, 
+    285, 
+    288, 
+    289, 
+    290, 
+    291, 
+    292, 
+    293, 
+    294, 
+    295, 
+    296, 
+    299, 
+    300, 
+    301, 
+    302, 
+    303, 
+    304, 
+    305, 
+    306, 
+    309, 
+    310, 
+    311, 
+    312, 
+    313, 
+    314, 
+    315, 
+    316, 
+    317, 
+    320, 
+    321, 
+    322, 
+    323, 
+    324, 
+    325, 
+    326, 
+    327, 
+    330, 
+    331, 
+    332, 
+    333, 
+    334, 
+    335, 
+    336, 
+    337, 
+    338, 
+    341, 
+    342, 
+    343, 
+    344, 
+    345, 
+    346, 
+    347, 
+    348, 
+    351, 
+    352, 
+    353, 
+    354, 
+    355, 
+    356, 
+    357, 
+    358, 
+    359, 
+    360, 
+    361, 
+    364, 
+    365, 
+    366, 
+    367, 
+    368, 
+    369, 
+    370, 
+    371, 
+    374, 
+    375, 
+    376, 
+    377, 
+    378, 
+    379, 
+    380, 
+    381, 
+    382, 
+    385, 
+    386, 
+    387, 
+    388, 
+    389, 
+    390, 
+    391, 
+    392, 
+    395, 
+    396, 
+    397, 
+    398, 
+    399, 
+    400, 
+    401, 
+    402, 
+    403, 
+    406, 
+    407, 
+    408, 
+    409, 
+    410, 
+    411, 
+    412, 
+    414, 
+    415, 
+    416, 
+    417, 
+    418, 
+    421, 
+    422, 
+    423, 
+    424, 
+    425, 
+    426, 
+    427, 
+    428, 
+    431, 
+    432, 
+    433, 
+    434, 
+    435, 
+    436, 
+    437, 
+    438, 
+    439, 
+    440, 
+    441, 
+    444, 
+    445, 
+    446, 
+    447, 
+    448, 
+    449, 
+    450, 
+    451, 
+    454, 
+    455, 
+    456, 
+    457, 
+    458, 
+    459, 
+    460, 
+    461, 
+    462, 
+    465, 
+    466, 
+    467, 
+    468, 
+    469, 
+    470, 
+    471, 
+    472, 
+    475, 
+    476, 
+    477, 
+    478, 
+    479, 
+    480, 
+    481, 
+    482, 
+    483, 
+    486, 
+    487, 
+    488, 
+    489, 
+    490, 
+    491, 
+    492, 
+    494, 
+    495, 
+    497
+  ], 
+  "heads": [[403, 0, 0]], 
+  "attrs": {"mxnet_version": ["int", 1001]}
+}

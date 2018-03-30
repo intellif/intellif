@@ -1,0 +1,12 @@
+donuts_train_00000_2.jpg;donuts_train_00000.jpg,61;donuts_train_0000109.jpg,18;
+donuts_train_0000100_1.jpg;donuts_train_0000100.jpg,52;donuts_train_0000111.jpg,29;
+donuts_train_0000101_1.jpg;donuts_train_0000101.jpg,56;donuts_train_00008.jpg,36;
+donuts_train_0000101_2.jpg;donuts_train_0000101.jpg,57;donuts_train_00008.jpg,38;
+donuts_train_000010_38.jpg;donuts_train_000010.jpg,44;donuts_train_0000105.jpg,33;
+donuts_train_000011_2.jpg;donuts_train_000011.jpg,69;donuts_train_000014.jpg,36;
+donuts_train_000011_3.jpg;donuts_train_000011.jpg,60;donuts_train_0000108.jpg,37;
+donuts_train_000011_4.jpg;donuts_train_000011.jpg,51;donuts_train_0000108.jpg,33;
+donuts_train_000011_5.jpg;donuts_train_000011.jpg,57;donuts_train_0000108.jpg,34;
+donuts_train_000012_1.jpg;donuts_train_000012.jpg,56;donuts_train_0000101.jpg,27;
+donuts_train_000012_2.jpg;donuts_train_000012.jpg,43;donuts_train_0000101.jpg,28;
+donuts_train_00001_7.jpg;donuts_train_00001.jpg,59;donuts_train_000020.jpg,22;

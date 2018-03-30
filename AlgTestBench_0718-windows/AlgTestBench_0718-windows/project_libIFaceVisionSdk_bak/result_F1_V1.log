@@ -1,0 +1,225 @@
+AlgTest,threadsF:1, threadsV:1,omp: 1, threadhold:0.100000, input:../img_input, namelist:../img_namelist, output:../img_output, model: model, saveextrat:0, readextratfrombin:0
+namelist/input image path=../img_namelist/2姚静.jpg,idx=0
+namelist/input image path=../img_namelist/5叶宗英.jpg,idx=1
+namelist/input image path=../img_namelist/3刘晶.jpg,idx=2
+namelist/input image path=../img_namelist/4陈彬彬.jpg,idx=3
+FaceFrontProcesser::FetchDataItemIdx:../img_namelist/2姚静.jpg
+namelist/input image path=../img_namelist/1高银珠.jpg,idx=4
+FaceFrontProcesser::SendToContinues::strImgPath=../img_namelist/2姚静.jpg,dwImgIdx=0,count=1
+FaceFeatherExtrater::onDataReceived:../img_namelist/2姚静.jpg
+left=286,top=291,right=203,cols=572,botton=203,rows=592
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_namelist/2姚静.jpg,dwImgIdx=0,udwAllocedSeq=0
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/2姚静.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:1
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_namelist/2姚静.jpg
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/2姚静.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:2
+FaceFrontProcesser::FetchDataItemIdx:../img_namelist/5叶宗英.jpg
+FaceFrontProcesser::SendToContinues::strImgPath=../img_namelist/5叶宗英.jpg,dwImgIdx=1,count=1
+FaceFeatherExtrater::onDataReceived:../img_namelist/5叶宗英.jpg
+left=138,top=149,right=100,cols=276,botton=100,rows=296
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_namelist/5叶宗英.jpg,dwImgIdx=1,udwAllocedSeq=1
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/5叶宗英.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:3
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/5叶宗英.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:4
+FaceFrontProcesser::FetchDataItemIdx:../img_namelist/3刘晶.jpg
+FaceFrontProcesser::SendToContinues::strImgPath=../img_namelist/3刘晶.jpg,dwImgIdx=2,count=1
+FaceFeatherExtrater::onDataReceived:../img_namelist/3刘晶.jpg
+left=104,top=112,right=69,cols=204,botton=69,rows=224
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_namelist/3刘晶.jpg,dwImgIdx=2,udwAllocedSeq=2
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/3刘晶.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:5
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/3刘晶.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:6
+FaceFrontProcesser::FetchDataItemIdx:../img_namelist/4陈彬彬.jpg
+FaceFrontProcesser::SendToContinues::strImgPath=../img_namelist/4陈彬彬.jpg,dwImgIdx=3,count=1
+FaceFeatherExtrater::onDataReceived:../img_namelist/4陈彬彬.jpg
+left=150,top=167,right=133,cols=310,botton=133,rows=330
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_namelist/4陈彬彬.jpg,dwImgIdx=3,udwAllocedSeq=3
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/4陈彬彬.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:7
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/4陈彬彬.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:8
+FaceFrontProcesser::FetchDataItemIdx:../img_namelist/1高银珠.jpg
+FaceFrontProcesser::SendToContinues::strImgPath=../img_namelist/1高银珠.jpg,dwImgIdx=4,count=1
+FaceFeatherExtrater::onDataReceived:../img_namelist/1高银珠.jpg
+left=179,top=189,right=146,cols=364,botton=146,rows=384
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_namelist/1高银珠.jpg,dwImgIdx=4,udwAllocedSeq=4
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/1高银珠.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:9
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_namelist/1高银珠.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:10
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+time: 1502184218, extrace cnt per second: 1.000000, avg: 2.000000 
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_namelist/2姚静.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_namelist/5叶宗英.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_namelist/5叶宗英.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_namelist/3刘晶.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+time: 1502184219, extrace cnt per second: 4.000000, avg: 3.000000 
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_namelist/3刘晶.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_namelist/4陈彬彬.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_namelist/4陈彬彬.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_namelist/1高银珠.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_namelist/1高银珠.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+namelist/input image path=../img_input/高银珠.jpg,idx=0
+FaceFrontProcesser::FetchDataItemIdx:../img_input/高银珠.jpg
+namelist/input image path=../img_input/刘晶.jpg,idx=1
+namelist/input image path=../img_input/姚静.jpg,idx=2
+namelist/input image path=../img_input/陈彬彬.jpg,idx=3
+namelist/input image path=../img_input/叶宗英.jpg,idx=4
+FaceFrontProcesser::SendToContinues::strImgPath=../img_input/高银珠.jpg,dwImgIdx=0,count=1
+FaceFeatherExtrater::onDataReceived:../img_input/高银珠.jpg
+left=179,top=189,right=146,cols=364,botton=146,rows=384
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_input/高银珠.jpg,dwImgIdx=0,udwAllocedSeq=5
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/高银珠.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:11
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/高银珠.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:12
+FaceFrontProcesser::FetchDataItemIdx:../img_input/刘晶.jpg
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_input/高银珠.jpg
+FaceFrontProcesser::SendToContinues::strImgPath=../img_input/刘晶.jpg,dwImgIdx=1,count=1
+FaceFeatherExtrater::onDataReceived:../img_input/刘晶.jpg
+left=104,top=112,right=69,cols=204,botton=69,rows=224
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_input/刘晶.jpg,dwImgIdx=1,udwAllocedSeq=6
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/刘晶.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:13
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/刘晶.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:14
+FaceFrontProcesser::FetchDataItemIdx:../img_input/姚静.jpg
+FaceFrontProcesser::SendToContinues::strImgPath=../img_input/姚静.jpg,dwImgIdx=2,count=1
+FaceFeatherExtrater::onDataReceived:../img_input/姚静.jpg
+left=286,top=291,right=203,cols=572,botton=203,rows=592
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_input/姚静.jpg,dwImgIdx=2,udwAllocedSeq=7
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/姚静.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:15
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/姚静.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:16
+FaceFrontProcesser::FetchDataItemIdx:../img_input/陈彬彬.jpg
+FaceFrontProcesser::SendToContinues::strImgPath=../img_input/陈彬彬.jpg,dwImgIdx=3,count=1
+FaceFeatherExtrater::onDataReceived:../img_input/陈彬彬.jpg
+left=150,top=167,right=133,cols=310,botton=133,rows=330
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_input/陈彬彬.jpg,dwImgIdx=3,udwAllocedSeq=8
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/陈彬彬.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:17
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/陈彬彬.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:18
+FaceFrontProcesser::FetchDataItemIdx:../img_input/叶宗英.jpg
+FaceFrontProcesser::SendToContinues::strImgPath=../img_input/叶宗英.jpg,dwImgIdx=4,count=1
+FaceFeatherExtrater::onDataReceived:../img_input/叶宗英.jpg
+left=138,top=149,right=100,cols=276,botton=100,rows=296
+FaceFeatherExtrater::onDataReceived::strImgPath=../img_input/叶宗英.jpg,dwImgIdx=4,udwAllocedSeq=9
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_EXTRAT::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/叶宗英.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:19
+inqueToInnerBuf::DATA_ITEM_TYPE_FACE_STORE::....
+FaceFeatherExtrater::inqueToInnerBuf:mBufferWorkItem[dwItemWPtr]:../img_input/叶宗英.jpg
+FaceFeatherExtrater::inqueToInnerBuf dwPendingImgCnt:20
+namelistpath=../img_namelist/1高银珠.jpg, inputpath=../img_input/高银珠.jpg, fscore=1.000000
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/1高银珠/100000_高银珠.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=1,dstFileOrg=../img_output/orgImg/1高银珠/高银珠_3_3_352_372.jpg
+namelistpath=../img_namelist/4陈彬彬.jpg, inputpath=../img_input/高银珠.jpg, fscore=0.224533
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/4陈彬彬/22453_高银珠.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=2,dstFileOrg=../img_output/orgImg/4陈彬彬/高银珠_3_3_352_372.jpg
+namelistpath=../img_namelist/3刘晶.jpg, inputpath=../img_input/高银珠.jpg, fscore=0.033528
+namelistpath=../img_namelist/5叶宗英.jpg, inputpath=../img_input/高银珠.jpg, fscore=0.183868
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/5叶宗英/18386_高银珠.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=3,dstFileOrg=../img_output/orgImg/5叶宗英/高银珠_3_3_352_372.jpg
+namelistpath=../img_namelist/2姚静.jpg, inputpath=../img_input/高银珠.jpg, fscore=0.151220
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/2姚静/15121_高银珠.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=4,dstFileOrg=../img_output/orgImg/2姚静/高银珠_3_3_352_372.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+time: 1502184220, extrace cnt per second: 6.000000, avg: 4.000000 
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_input/高银珠.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_input/刘晶.jpg
+namelistpath=../img_namelist/1高银珠.jpg, inputpath=../img_input/刘晶.jpg, fscore=0.033528
+namelistpath=../img_namelist/4陈彬彬.jpg, inputpath=../img_input/刘晶.jpg, fscore=0.122852
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/4陈彬彬/12285_刘晶.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=1,dstFileOrg=../img_output/orgImg/4陈彬彬/刘晶_5_3_198_218.jpg
+namelistpath=../img_namelist/3刘晶.jpg, inputpath=../img_input/刘晶.jpg, fscore=1.000000
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/3刘晶/100000_刘晶.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=2,dstFileOrg=../img_output/orgImg/3刘晶/刘晶_5_3_198_218.jpg
+namelistpath=../img_namelist/5叶宗英.jpg, inputpath=../img_input/刘晶.jpg, fscore=-0.007344
+namelistpath=../img_namelist/2姚静.jpg, inputpath=../img_input/刘晶.jpg, fscore=0.134510
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/2姚静/13451_刘晶.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=3,dstFileOrg=../img_output/orgImg/2姚静/刘晶_5_3_198_218.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_input/刘晶.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_input/姚静.jpg
+namelistpath=../img_namelist/1高银珠.jpg, inputpath=../img_input/姚静.jpg, fscore=0.151220
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/1高银珠/15121_姚静.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=1,dstFileOrg=../img_output/orgImg/1高银珠/姚静_53_48_466_486.jpg
+namelistpath=../img_namelist/4陈彬彬.jpg, inputpath=../img_input/姚静.jpg, fscore=0.017232
+namelistpath=../img_namelist/3刘晶.jpg, inputpath=../img_input/姚静.jpg, fscore=0.134510
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/3刘晶/13451_姚静.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=2,dstFileOrg=../img_output/orgImg/3刘晶/姚静_53_48_466_486.jpg
+namelistpath=../img_namelist/5叶宗英.jpg, inputpath=../img_input/姚静.jpg, fscore=-0.072525
+namelistpath=../img_namelist/2姚静.jpg, inputpath=../img_input/姚静.jpg, fscore=1.000000
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/2姚静/100000_姚静.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=3,dstFileOrg=../img_output/orgImg/2姚静/姚静_53_48_466_486.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_input/姚静.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_input/陈彬彬.jpg
+namelistpath=../img_namelist/1高银珠.jpg, inputpath=../img_input/陈彬彬.jpg, fscore=0.224533
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/1高银珠/22453_陈彬彬.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=1,dstFileOrg=../img_output/orgImg/1高银珠/陈彬彬_0_0_309_329.jpg
+namelistpath=../img_namelist/4陈彬彬.jpg, inputpath=../img_input/陈彬彬.jpg, fscore=1.000000
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/4陈彬彬/100000_陈彬彬.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=2,dstFileOrg=../img_output/orgImg/4陈彬彬/陈彬彬_0_0_309_329.jpg
+namelistpath=../img_namelist/3刘晶.jpg, inputpath=../img_input/陈彬彬.jpg, fscore=0.122852
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/3刘晶/12285_陈彬彬.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=3,dstFileOrg=../img_output/orgImg/3刘晶/陈彬彬_0_0_309_329.jpg
+namelistpath=../img_namelist/5叶宗英.jpg, inputpath=../img_input/陈彬彬.jpg, fscore=0.116247
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/5叶宗英/11624_陈彬彬.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=4,dstFileOrg=../img_output/orgImg/5叶宗英/陈彬彬_0_0_309_329.jpg
+namelistpath=../img_namelist/2姚静.jpg, inputpath=../img_input/陈彬彬.jpg, fscore=0.017232
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+time: 1502184221, extrace cnt per second: 6.000000, avg: 4.500000 
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_input/陈彬彬.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+FaceFeatherExtrater::ExtratProcessLoop:PERFORM_FEATURE_EXTRAT:../img_input/叶宗英.jpg
+namelistpath=../img_namelist/1高银珠.jpg, inputpath=../img_input/叶宗英.jpg, fscore=0.183868
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/1高银珠/18386_叶宗英.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=1,dstFileOrg=../img_output/orgImg/1高银珠/叶宗英_8_9_260_280.jpg
+namelistpath=../img_namelist/4陈彬彬.jpg, inputpath=../img_input/叶宗英.jpg, fscore=0.116247
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/4陈彬彬/11624_叶宗英.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=2,dstFileOrg=../img_output/orgImg/4陈彬彬/叶宗英_8_9_260_280.jpg
+namelistpath=../img_namelist/3刘晶.jpg, inputpath=../img_input/叶宗英.jpg, fscore=-0.007344
+namelistpath=../img_namelist/5叶宗英.jpg, inputpath=../img_input/叶宗英.jpg, fscore=1.000000
+cvSaveImage::mdwOutputMode=3,dstFileFace=../img_output/faceImg/5叶宗英/100000_叶宗英.jpg
+cvSaveImage g_dwSaveOrgEn=1,tempMatchCnt=3,dstFileOrg=../img_output/orgImg/5叶宗英/叶宗英_8_9_260_280.jpg
+namelistpath=../img_namelist/2姚静.jpg, inputpath=../img_input/叶宗英.jpg, fscore=-0.072525
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_EXTRAT::IncFinishedImgCnt
+FaceDataItem::DATA_ITEM_TYPE_FACE_STORE onImageDataRcved :../img_input/叶宗英.jpg
+FaceFeatherExtrater::ExtratProcessLoop::DATA_ITEM_TYPE_FACE_STORE::IncFinishedImgCnt
+Program Over!!!

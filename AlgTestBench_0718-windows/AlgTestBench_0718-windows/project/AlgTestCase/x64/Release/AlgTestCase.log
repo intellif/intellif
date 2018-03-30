@@ -1,0 +1,44 @@
+﻿生成启动时间为 2017/12/8 18:42:00。
+     1>项目“D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\AlgTestCase\AlgTestCase.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\boost_1_58_0" /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\IFaceSDK\win_x64\include" /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\opencv\build\include" /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\opencv\build\include\opencv2" /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\curl\include" /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\mysqlcconn\include" /I"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\mysqlcconn\include\mysql" /Zi /nologo /W3 /WX- /Od /Oi /GL /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt ..\..\src\AlogTestCaseMain.cpp ..\..\src\IfsdkWrapper.cpp ..\..\src\inifile.cpp ..\..\src\Performance.cpp ..\..\src\stringutil.cpp ..\..\src\utilsfunction.cpp
+         AlogTestCaseMain.cpp
+         IfsdkWrapper.cpp
+     1>..\..\src\IfsdkWrapper.cpp(228): warning C4018: “<”: 有符号/无符号不匹配
+         inifile.cpp
+         Performance.cpp
+     1>..\..\src\Performance.cpp(427): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\..\src\Performance.cpp(1094): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\..\src\Performance.cpp(1885): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\..\src\Performance.cpp(3446): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\..\src\Performance.cpp(3737): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\..\src\Performance.cpp(4580): warning C4244: “=”: 从“my_ulonglong”转换到“int”，可能丢失数据
+         stringutil.cpp
+         utilsfunction.cpp
+     1>..\..\src\utilsfunction.cpp(171): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>..\..\src\utilsfunction.cpp(206): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\..\src\utilsfunction.cpp(207): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>..\..\src\utilsfunction.cpp(209): warning C4244: “return”: 从“int”转换到“float”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\x64\Release\AlgTestCase.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\IFaceSDK\win_x64\lib" /LIBPATH:"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\opencv\build\x64\vc12\lib" /LIBPATH:"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\boost_1_58_0\stage\lib_x64" /LIBPATH:"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\curl\lib_release\win_x64" /LIBPATH:"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\\..\externel\mysqlcconn\lib_release\win_x64" opencv_core249.lib opencv_highgui249.lib opencv_imgproc249.lib opencv_features2d249.lib opencv_video249.lib ifacesdk.lib FaceAligner.lib FaceDetector.lib FeaturesContainer.lib SDMLocator.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib libcurl.lib libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\x64\Release\AlgTestCase.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\x64\Release\AlgTestCase.lib" /MACHINE:X64 x64\Release\AlogTestCaseMain.obj
+         x64\Release\IfsdkWrapper.obj
+         x64\Release\inifile.obj
+         x64\Release\Performance.obj
+         x64\Release\stringutil.obj
+         x64\Release\utilsfunction.obj
+     1>IfsdkWrapper.obj : error LNK2001: 无法解析的外部符号 "int __cdecl IFaceRecSDK::Create(enum E_IFaceRecType,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int &)" (?Create@IFaceRecSDK@@YAHW4E_IFaceRecType@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAH@Z)
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(607,5): error MSB6006: “link.exe”已退出，代码为 1120。
+     1>IfsdkWrapper.obj : error LNK2001: 无法解析的外部符号 "int __cdecl IFaceRecSDK::Destroy(int)" (?Destroy@IFaceRecSDK@@YAHH@Z)
+     1>IfsdkWrapper.obj : error LNK2001: 无法解析的外部符号 "int __cdecl IFaceRecSDK::FeatureCompare(enum E_IFaceRecType,float const *,unsigned int,float const *,unsigned int,float &)" (?FeatureCompare@IFaceRecSDK@@YAHW4E_IFaceRecType@@PEBMI1IAEAM@Z)
+     1>IfsdkWrapper.obj : error LNK2001: 无法解析的外部符号 "int __cdecl IFaceRecSDK::Init(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?Init@IFaceRecSDK@@YAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>IfsdkWrapper.obj : error LNK2001: 无法解析的外部符号 "int __cdecl IFaceRecSDK::FaceDetect(int,void *,int,int,int &,struct T_IFaceRecRect * *)" (?FaceDetect@IFaceRecSDK@@YAHHPEAXHHAEAHPEAPEAUT_IFaceRecRect@@@Z)
+     1>IfsdkWrapper.obj : error LNK2001: 无法解析的外部符号 "int __cdecl IFaceRecSDK::ReleaseExtractResult(float *)" (?ReleaseExtractResult@IFaceRecSDK@@YAHPEAM@Z)
+     1>IfsdkWrapper.obj : error LNK2001: 无法解析的外部符号 "int __cdecl IFaceRecSDK::FeatureExtract(int,void *,int,int,struct T_IFaceRecRect &,int &,float * &)" (?FeatureExtract@IFaceRecSDK@@YAHHPEAXHHAEAUT_IFaceRecRect@@AEAHAEAPEAM@Z)
+     1>IfsdkWrapper.obj : error LNK2001: 无法解析的外部符号 "int __cdecl IFaceRecSDK::ReleaseDetectResult(struct T_IFaceRecRect *)" (?ReleaseDetectResult@IFaceRecSDK@@YAHPEAUT_IFaceRecRect@@@Z)
+     1>IfsdkWrapper.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: static void __cdecl MtcnnMxnetHandle::MtcnnStaticInit(void)" (__imp_?MtcnnStaticInit@MtcnnMxnetHandle@@SAXXZ)
+     1>D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\x64\Release\AlgTestCase.exe : fatal error LNK1120: 9 个无法解析的外部命令
+     1>已完成生成项目“D:\pjd\Test\PROGRAM\AlgTestBench_0718-windows\AlgTestBench_0718-windows\project\AlgTestCase\AlgTestCase.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:17.33
